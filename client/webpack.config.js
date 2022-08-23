@@ -19,7 +19,7 @@ module.exports = () => {
             // generates html file through webpack
             new HtmlWebpackPlugin({
               template: './index.html',
-              title: 'Contact Cards'
+              title: 'Text Editor'
             }),
            
             // custom service worker
@@ -32,9 +32,9 @@ module.exports = () => {
             new WebpackPwaManifest({
               fingerprints: false,
               inject: true,
-              name: 'Contact Cards',
-              short_name: 'Contact',
-              description: 'Never forget your contacts!',
+              name: 'text-editor',
+              short_name: 'Jate',
+              description: 'Another text editor.',
               background_color: '#225ca3',
               theme_color: '#225ca3',
               start_url: '/',
